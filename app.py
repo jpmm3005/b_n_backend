@@ -5,7 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load API key
-key_file = pd.read_csv("/Users/jpxmaestas/Desktop/last_fm_key.txt")
+key_file = pd.read_csv("/Users/jpxmaestas/Desktop/data/last_fm_key.txt")
 api_key = key_file.iloc[0, 0]
 
 @app.route("/get_similar", methods=["POST"])
